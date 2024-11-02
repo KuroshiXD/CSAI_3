@@ -42,7 +42,7 @@ jobs:
 
       - name: Run tests and generate report
         run: |
-          pytest test_library.py --html=report.html --self-contained-html
+          pytest library_test.py --html=report.html --self-contained-html
 
       - name: Upload test report as artifact
         if: always()  # Всегда загружает отчет, независимо от успеха или провала тестов
